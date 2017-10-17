@@ -1,0 +1,4 @@
+master:
+    script: "npm install; pm2-docker restart pm2.config.json"
+    only:
+       - master
