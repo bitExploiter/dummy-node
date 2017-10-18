@@ -7,7 +7,7 @@ var handler = createHandler({path: '/webhook', secret: 'myhashsecret'});
 handler.on('*', function (event) {
     const cmd = require('node-cmd');
 
-    cmd.get('git pull https://github.com/bitExploiter/dummy-node', function (err, data, stderr) {
+    cmd.get('git pull https://github.com/bitExploiter/dummy-node; npm restart', function (err, data, stderr) {
             console.log(data);
         });
 
