@@ -14,7 +14,7 @@ handler.on('*', function (event) {
 });
 
 app.get('/', function (req, res) {
-    res.send('Hello World! Azucar Morena Rizada')
+    res.json({sucess: true, message:'is Awesome Bro'});
 });
 
 app.use(handler);
